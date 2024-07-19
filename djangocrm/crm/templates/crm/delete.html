@@ -1,0 +1,26 @@
+{% extends "crm/base.html" %}
+{% block title %} Delete User {% endblock %}
+
+{% block content %}
+    <style>
+        .card{
+            margin-top: 50px;
+        }
+    </style>
+    {% if record %}
+        <div class="card col-md-6 offset-md-3">
+            <div class="card-header">
+                Alert
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Customer: {{ record.customer }}</h5>
+                <p class="card-text">Are you sure you want to delete this customer?</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary" style="background-color: red;">Yes, delete</button>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+                </form>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

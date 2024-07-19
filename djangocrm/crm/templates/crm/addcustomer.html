@@ -1,0 +1,50 @@
+{% extends "crm/base.html" %}
+{% block title %} Add Customer {% endblock %}
+
+
+
+{% block content %}
+    <style>
+        label{
+            display: inline;
+            float: left;
+            font-size: 0.9rem;
+        }
+
+        input{
+            width: 100%;
+            height: 25px;    
+        }
+        .card{
+            margin-top: 20px;
+        }
+    </style>
+    <div class="card col-md-6 offset-md-3">
+        <div class="card-header">
+            Add Customer
+        </div>
+        <div class="card-body">
+            <form method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit" class="btn btn-primary">Add Customer</button>
+                    <a href="{% url 'home' %}" class="btn btn-primary" >Home</a>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Customer</title>
+</head>
+<body>
+
+</body>
+</html>
