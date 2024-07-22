@@ -9,7 +9,7 @@ This is a Customer Relationship Management (CRM) system built using Django, desi
 - **User Authentication**: Secure login and registration system to control access to customer data.
 - **Customer Management**: Comprehensive management of customer details including name, address, city, state, zip code, date created, and ID.
 - **Data Privacy**: Restricts access to customer information based on user authentication, ensuring that only authorized users can view and manage customer data.
-- 
+
 ## Installation
 
 1. Clone the repository:
