@@ -1,4 +1,4 @@
-# Django-CRM
+# Django CRM (Customer Relationship Management)
 
 # Django CRM Project
 
