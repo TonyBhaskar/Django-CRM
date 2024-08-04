@@ -39,7 +39,7 @@ This is a Customer Relationship Management (CRM) system built using Django, desi
     python manage.py runserver
     ```
 
-7. Access the application at `http://127.0.0.1:8000/`.
+6. Access the application at `http://127.0.0.1:8000/`.
 
 ## Usage
 
